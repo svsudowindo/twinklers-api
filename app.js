@@ -73,7 +73,8 @@ app.use('/common', function (req, res, next) {
   })
 }, commonRoutes.commonRoutes);
 // mongodb://localhost:27017/twinkler
-mongoose.connect('mongodb+srv://saikumar1330:8125431943@meatonline.2gfnx.mongodb.net/MeatOnline?retryWrites=true&w=majority', {
+// mongodb+srv://saikumar1330:8125431943@meatonline.2gfnx.mongodb.net/MeatOnline?retryWrites=true&w=majority
+mongoose.connect('mongodb+srv://saikumar1330:8125431943@cluster0.zwjjz.mongodb.net/twinklers-db?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(res => {
