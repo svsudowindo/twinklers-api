@@ -4,7 +4,8 @@
   "description": "Svsudowindo Application",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",    
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run start",
     "stop-linux": "killall node"
   },
   "author": "svsudowindo",
