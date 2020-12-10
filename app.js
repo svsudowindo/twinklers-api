@@ -78,7 +78,7 @@ mongoose.connect('mongodb+srv://saikumar1330:8125431943@cluster0.zwjjz.mongodb.n
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(res => {
-  app.listen(APP_CONFIG.PORT, () => {
-    console.log('listening', APP_CONFIG.PORT);
+  app.listen(process.env.PORT, () => {
+    console.log('listening', process.env.PORT);
   })
 })
