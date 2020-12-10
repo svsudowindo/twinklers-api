@@ -80,6 +80,6 @@ mongoose.connect('mongodb+srv://saikumar1330:8125431943@cluster0.zwjjz.mongodb.n
 }).then(res => {
   app.listen(process.env.PORT, () => {
     console.log('listening', process.env.PORT);
-	console.log('just checking for auto deployment');
+	console.log('just checking for auto deploymentt');
   })
 })
