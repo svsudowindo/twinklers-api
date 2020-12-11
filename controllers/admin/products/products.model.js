@@ -4,7 +4,8 @@ var uniqueValidator = require('mongoose-unique-validator');
 var ProductsSchema = mongoose.Schema({
   categoryID: {
     type: Object,
-    default: null
+    default: null,
+    required: true
   },
   id: {
     type: String,

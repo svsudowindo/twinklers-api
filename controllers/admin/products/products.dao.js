@@ -24,7 +24,6 @@ exports.createProduct = (req, res, next) => {
       return res.send(Utils.sendResponse(302, null, ['User Doesnt exist ... Please try with admin'], 'User Doesnt exist ... Please try with admin'));
     }
     // check for the category ID
-    if (payload.categoryID) {
       CategoryModel.find({
         id: payload.categoryID
       }, (categoryError, categorySuccess) => {
@@ -36,9 +35,6 @@ exports.createProduct = (req, res, next) => {
         }
         productIntoDB(req, res, next);
       })
-    } else {
-      productIntoDB(req, res, next);
-    }
   })
 }
 
