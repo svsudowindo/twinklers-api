@@ -78,8 +78,9 @@ mongoose.connect('mongodb+srv://saikumar1330:8125431943@cluster0.zwjjz.mongodb.n
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(res => {
-  app.listen(process.env.PORT, () => {
-    console.log('listening', process.env.PORT);
+  const port = process.env.PORT || 4500;
+  app.listen(port, () => {
+    console.log('listening', port);
 	console.log('just checking for auto deploymentt');
   })
 })

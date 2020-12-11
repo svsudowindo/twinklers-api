@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && node app.js",
-    "stop-linux": "killall node"
+    "stop-linux": "killall node",
+    "nodemon": "nodemon app.js"
   },
   "author": "svsudowindo",
   "license": "ISC",
