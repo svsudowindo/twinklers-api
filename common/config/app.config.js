@@ -1,5 +1,5 @@
 APP_CONFIG =  {
-  PORT: 4500,
+  PORT: 5000,
   IMAGE_RESPONSE_URL: 'http://localhost:4500/'
 }
 
